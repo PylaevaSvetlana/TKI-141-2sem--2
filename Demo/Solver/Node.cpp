@@ -1,3 +1,3 @@
 #include "Node.h"
 
-Node::Node(int value) :data(value), next(nullptr), prev(nullptr) {}
+Node::Node(int value) :data(value), next(nullptr), previous(nullptr) {}

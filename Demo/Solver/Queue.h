@@ -48,6 +48,7 @@ namespace Queue
 		void dequeue();
 		/**
 		* @brief - Функция,читающая головной элемент.
+		* @return - Возвращает значение первого узла.
 		*/
 		int peek();
 		/**

@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Queue.h"
 
-Queue::Queue::Queue():head(nullptr), tail(nullptr), size(0) {}
+Queue::Queue::Queue() :head{ nullptr }, tail{ nullptr }, size{ 0 } {}
 
 Queue::Queue::~Queue()
 {
@@ -43,7 +43,7 @@ void Queue::Queue::dequeue()
 	{
 		throw std::out_of_range("");
 	}
-	if (tail = head)
+	if (tail == head)
 	{
 		tail = head = nullptr;
 	}
@@ -53,7 +53,6 @@ void Queue::Queue::dequeue()
 		head->previous = nullptr;
 	}
 	--size;
-
 }
 
 int Queue::Queue::peek()
@@ -114,7 +113,3 @@ Queue::Queue& Queue::Queue::operator=(Queue&& other) noexcept
 	other.size = 0;
 	return *this;
 }
-
-
-
-
