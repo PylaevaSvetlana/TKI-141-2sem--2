@@ -106,10 +106,11 @@ Queue::Queue& Queue::Queue::operator=(const Queue& other)
 
 Queue::Queue& Queue::Queue::operator=(Queue&& other) noexcept
 {
-	this->head = other.head;
-	this->tail = other.tail;
-	this->size = other.size;
-	other.head = other.tail = nullptr;
-	other.size = 0;
+	if (this != &other)
+		{
+			std::swap(other.head, this->head);
+			std::swap(other.tail, this->tail);
+			std::exchange(other.size, this->size);
+	    } 
 	return *this;
 }
