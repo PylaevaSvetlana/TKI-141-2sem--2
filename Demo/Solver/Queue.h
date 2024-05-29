@@ -79,4 +79,3 @@ namespace Queue
 		Queue& operator = (Queue&& other) noexcept;
 	};
 }
-

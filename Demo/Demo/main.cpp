@@ -12,21 +12,3 @@ int main()
 	std::cout << list.peek() << std::endl;
 	return 0;
 }
-
-
-
-
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-	
